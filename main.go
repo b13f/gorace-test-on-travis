@@ -14,7 +14,7 @@ func main() {
 	println(runtime.GOMAXPROCS(0))
 
 	time.AfterFunc(10*time.Second, func() {
-		os.Exit(1)
+		os.Exit(0)
 	})
 
 	m := map[int]int{
